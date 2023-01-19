@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../css/page2.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+   
+        <li class="logo"><a class="fas fa-film"></a>iSratim</li>
+
+        
+        <input type="checkbox" id="box-1">
+        <label id="toggler" for="box-1">
+            <span>תפריט<i class="fas fa-bars"></i></span>
+        </label>
+
+        
+        <ul>
+            <li><a href="../index.html">דף בית</a></li>
+            <li><a href="#">קטגוריות סרטים</a></li>
+            <li><a href="#">רישום למנוי</a></li>
+            <li><a href="#footer">אודות</a></li>
+            
+        </ul>
+
+        
+        <div id="navbar-form">
+            <input type="checkbox" id="box-2">
+            <form action="" id="search-form">
+                <input type="search" placeholder="חיפוש סרטים" id="search-bar">
+                <button id="search-btn" type="submit">
+                    <span><i class="fas fa-search"></i></span>
+                </button>
+            </form>
+
+            <label for="box-2" id="search-form-opener">
+                <span><i class="fas fa-search"></i></span>
+            </label>
+
+            <label for="box-2" id="search-form-closer">
+                <span><i class="fas fa-times"></i></span>
+            </label>
+        </div>
+    </nav>  
+    <br class="enter">
+    <br class="enter"> 
+    <br class="enter">
+    <br class="enter">
+    <br class="enter">
+    <br class="enter"> 
+    <br class="enter">
+    <br class="enter"> 
+    <br class="enter">
+    <br class="enter">
+    <br class="enter">
+    <br class="enter">
+</header> 
+
+
+
+<menu>
+    <section>
+        <h2>: רישום מנוי</h2>
+
+<form method="post" action="subscribe.php" class="signinform" id="form1">
+
+
+  <label class="label1"><input type="text" name="phone" placeholder="לדוגמה : 054-123-4567" >:מספר טלפון</label><br><br><br>
+  <label class="label1"><input type="text" name="id" >:ת.ז</label><br><br><br>
+  <label class="label1"><input type="text" name="username">: שם משתמש</label><br><br><br>
+  <label class="label1"><input type="password" name="password" >: סיסמה</label><br><br><br>
+  <label class="label1">
+    <select name="subscription_range">
+      <option value="1 month">חודש</option>
+          <option value="3 months">חודשיים</option>
+               <option value="6 months">חצי שנה</option>
+                     <option value="1 year">שנה</option>
+    </select>:תוקף מנוי</label><br><br><br>
+  
+  <input type="submit" name="submit" value="ביצוע רישום" class="input1">
+ 
+</form>
+<br>
+<br>
+<br>
+<br>
+
+    </section>
+</menu>
+
+<footer id="footer">
+    <div class="container567"> 
+        <div class="row">
+            <div class="footer-col">
+                <h4>אודות</h4>
+                <ul>
+                    <li><a href="">בדיקה/ביטול הזמנה</a></li>
+                    <li><a href="">צור קשר</a></li>
+                    <li><a href="">iSratim אודות</a></li> 
+                    <li><a href="">מידע כללי</a></li>
+                    <li><a href="">המתחמים שלנו</a></li>
+                </ul>
+
+            </div> 
+            <div class="footer-col">
+                <h4>קישורים</h4>
+                <ul>
+                    <li><a href="">כנסים ואירועים</a></li>
+                    <li><a href="">דרושים</a></li> 
+                    <li><a href="">יום הולדת מהסרטים</a></li> 
+                    <li><a href="">פרסום וקד"מ</a></li> 
+                    
+                    <li><a href=""></a></li>
+
+                    
+                </ul>
+
+            </div> 
+            <div class="footer-col">
+                <h4>תנאי שימוש</h4>
+                <ul>
+                    <li><a href="">תקנון</a></li> 
+                    <li><a href="">זכויות</a></li> 
+                    <li><a href="">נגישות</a></li>
+                </ul>
+
+            </div> 
+            <div class="footer-col">
+                <h4>הרשם לניוזלטר</h4>
+               <form action="">
+                <input type="text" placeholder="שם מלא" class="inputName" required>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="דואר אלקטרוני" class="InputMail" required>
+                <input type="submit" value="שלח" class="InputSubmit">
+               </form>
+
+            </div>
+
+
+        </div>  
+        <hr>
+        <div class="row">
+            <div class="col"> 
+                <p>&#169; 2023 Created by Razi,Ali,Amir</p>
+
+            </div> 
+            <div class="socialIcons"> 
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>  
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</footer>
+
+
+
+</body>
+</html>

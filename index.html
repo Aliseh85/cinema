@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iSratim</title> 
+    <link rel="stylesheet" href="css/homestyle.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function custom(){
+            alert("התוקף של הסרט נגמר , מצטערים");
+        }
+    </script>
+    
+</head>
+<body> 
+    <header>
+        <nav>
+       
+            <li class="logo"><a class="fas fa-film"></a>iSratim</li>
+    
+            
+            <input type="checkbox" id="box-1">
+            <label id="toggler" for="box-1">
+                <span>תפריט<i class="fas fa-bars"></i></span>
+            </label>
+    
+            
+            <ul>
+                <li><a href="#">דף בית</a></li>
+                <li><a href="#">קטגוריות סרטים</a></li>
+                <li><a href="includes/page2.html">רישום למנוי</a></li>
+                <li><a href="#footer">אודות</a></li>
+                
+            </ul>
+    
+            
+            <div id="navbar-form">
+                <input type="checkbox" id="box-2">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="חיפוש סרטים" id="search-bar">
+                    <button id="search-btn" type="submit">
+                        <span><i class="fas fa-search"></i></span>
+                    </button>
+                </form>
+    
+                <label for="box-2" id="search-form-opener">
+                    <span><i class="fas fa-search"></i></span>
+                </label>
+    
+                <label for="box-2" id="search-form-closer">
+                    <span><i class="fas fa-times"></i></span>
+                </label>
+            </div>
+        </nav>  
+        <br class="enter">
+        <br class="enter"> 
+        <br class="enter">
+        <br class="enter">
+        <br class="enter">
+        <br class="enter"> 
+        <br class="enter">
+        <br class="enter"> 
+        <br class="enter">
+        <br class="enter">
+        <br class="enter">
+        <br class="enter">
+    </header> 
+    
+    
+    <main> 
+
+        
+        <section class="one"> 
+            <h2 class="title1">!חדש בקולנוע</h2> 
+            <div class="container1">
+                <img src="images/homepage/cat.jpg" alt="סרט">
+                <div class="text-block">
+                    <h4 class="para1">החתול של שרק 2</h4> 
+                    
+                    <p class="para2">ילדים,רפתקאות|2022 | ישראל |100 דקות</p>
+                    
+                    
+                    <a href="includes/page3.html" class="purchase"><i class="fas fa-ticket-alt"></i>לרכישת כרטיס</a>
+                </div>
+
+            </div>
+        </section>  
+        <br>
+        <br>
+
+        <section class="two">
+            <h3 style="text-align: right;" class="title2">!עכשיו בקולנוע</h3>  
+            <div class="container234">
+                <div class="card">
+                    <div class="card-image card1"></div>
+                    <h2>Puss in Boots 2</h2>
+                   <p><b>סיווג</b>: ילדים</p>
+                   <p><b>אורך בדקות</b>: 100</p>
+                   <p><b>תאריך בכורה</b>: 28/12/2022</p> 
+                   <p><b>הגבלת צפיה</b>: מותר לכל</p>
+                    <a href="includes/page3.html">לרכישת כרטיס</a>
+                   
+                    
+                </div>
+                <div class="card"> 
+                    <div class="card-image card2"></div> 
+                    <h3>אווטאר: דרכם של המים - דו מימד</h3> 
+                    <p><b>סיווג</b>: פנטזיה</p> 
+                    <p><b>אורך בדקות</b>: 192</p>
+                    <p><b>תאריך בכורה</b>: 15/12/2022</p>  
+                    <p><b>הגבלת צפיה</b>: עד גיל 8 בליווי מבוגר</p>
+                   
+                   
+                    
+                    <a href="" onclick="custom()">לרכישת כרטיס</a>
+    
+                </div> 
+                <div class="card">
+                    <div class="card-image card3"></div>
+                    <h2>בלש ניו יורקי: התיקון</h2> 
+                    <p><b>סיווג</b>: אקשן</p>
+                    <p><b>אורך בדקות</b>: 97</p>
+                    <p><b>תאריך בכורה</b>: 29/12/2022</p> 
+                    <p><b>הגבלת צפיה</b>: מוגבל מגיל 16</p>
+
+                    <a href="" onclick="custom()">לרכישת כרטיס</a>
+                    
+                </div> 
+                <div class="card">
+                    <div class="card-image card4"></div>
+                    <h2>The Lost King</h2> 
+                    <p><b>סיווג</b>: דרמה</p>
+                    <p><b>אורך בדקות</b>: 108</p>
+                    <p><b>תאריך בכורה</b>: 22/12/2022</p>
+                    <p><b>הגבלת צפיה</b>: מותר לכל</p>
+                    
+                    
+                    <a href="" onclick="custom()">לרכישת כרטיס</a>
+                </div>
+                
+            </div>
+
+            
+
+        </section>
+    </main>  
+    <br>
+    <br>
+    <footer id="footer">
+        <div class="container567"> 
+            <div class="row">
+                <div class="footer-col">
+                    <h4>אודות</h4>
+                    <ul>
+                        <li><a href="">בדיקה/ביטול הזמנה</a></li>
+                        <li><a href="">צור קשר</a></li>
+                        <li><a href="">iSratim אודות</a></li> 
+                        <li><a href="">מידע כללי</a></li>
+                        <li><a href="">המתחמים שלנו</a></li>
+                    </ul>
+
+                </div> 
+                <div class="footer-col">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="">כנסים ואירועים</a></li>
+                        <li><a href="">דרושים</a></li> 
+                        <li><a href="">יום הולדת מהסרטים</a></li> 
+                        <li><a href="">פרסום וקד"מ</a></li> 
+                        
+                        <li><a href=""></a></li>
+
+                        
+                    </ul>
+
+                </div> 
+                <div class="footer-col">
+                    <h4>תנאי שימוש</h4>
+                    <ul>
+                        <li><a href="">תקנון</a></li> 
+                        <li><a href="">זכויות</a></li> 
+                        <li><a href="">נגישות</a></li>
+                    </ul>
+
+                </div> 
+                <div class="footer-col">
+                    <h4>הרשם לניוזלטר</h4>
+                   <form action="">
+                    <input type="text" placeholder="שם מלא" class="inputName" required>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="דואר אלקטרוני" class="InputMail" required>
+                    <input type="submit" value="שלח" class="InputSubmit">
+                   </form>
+
+                </div>
+
+
+            </div>  
+            <hr>
+            <div class="row">
+                <div class="col"> 
+                    <p>&#169; 2023 Created by Razi,Ali,Amir</p>
+
+                </div> 
+                <div class="socialIcons"> 
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>  
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+     
+    
+
+</body>
+</html>
