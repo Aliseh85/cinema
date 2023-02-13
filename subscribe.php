@@ -67,9 +67,9 @@
       <?php
     // Connect to the database
     $servername = "localhost";
-    $username = "alise_amr";
-    $password = "12345";
-    $dbname = "alise_mydatabase";
+    $username = "username";
+    $password = "password";
+    $dbname = "database";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
