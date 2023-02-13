@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>רכישת כרטיס</title> 
+    <link rel="stylesheet" href="../css/cardticket.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../jquery/cardjquery.js" text="text/javascript"></script>
+    
+</head>
+<body> 
+    <header>
+        <nav>
+       
+            <li class="logo"><a class="fas fa-film"></a>iSratim</li>
+    
+            
+            <input type="checkbox" id="box-1">
+            <label id="toggler" for="box-1">
+                <span>תפריט<i class="fas fa-bars"></i></span>
+            </label>
+    
+            
+            <ul>
+                <li><a href="../index.html">דף בית</a></li>
+                <li><a href="#newsleter">ניוזלטר</a></li>
+                <li><a href="../includes/register.html">רישום למנוי</a></li>
+                <li><a href="#footer">אודות</a></li>
+                
+            </ul>
+    
+            
+            <div id="navbar-form">
+                <input type="checkbox" id="box-2">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="חיפוש סרטים" id="search-bar">
+                    <button id="search-btn" type="submit">
+                        <span><i class="fas fa-search"></i></span>
+                    </button>
+                </form>
+    
+                <label for="box-2" id="search-form-opener">
+                    <span><i class="fas fa-search"></i></span>
+                </label>
+    
+                <label for="box-2" id="search-form-closer">
+                    <span><i class="fas fa-times"></i></span>
+                </label>
+            </div>
+        </nav>  
+        
+    </header> 
+    
+    
+   <main>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <section  class="one" style="text-align: center;" id="one">
+        <h3 class="titleform" style="text-align: center;">:להזמנת כרטיסים נא למלא פרטי מועד הביקור  <br> שם הסרט :החתול של שרק 2</h3>
+        <br>
+        <br>
+
+        <form class="form-inline" id="form1">
+            
+          
+            <ul class="ul1">
+                <li class="line"><label  for="date" class="label1"><input type="date" id="date"  value="2023-01-01" min="2023-01-01" max="2023-12-31" class="inputt1" required> : בחירת תאריך</label> &nbsp;&nbsp;</li>
+                <li class="line"><label  for="appt-time" class="label1"><select name="time" id="time" class="inputt2">
+                    <option value="14:00">14:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="23:00">23:00</option>
+                  </select> : בחירת שעה</label>&nbsp;&nbsp;</li>
+                <li class="line"><label for="locations" class="label1"> 
+                    <select name="locations" id="locations" class="inputt3">
+                        <option value="Tel Aviv-yafo">תל אביב יפו</option>
+                        <option value="Haifa">חיפה</option>
+                        <option value="Rishon Letzion">ראשון לציון</option>
+                        <option value="Naharyia">נהריה</option>
+                      </select> :  <i class="fa-solid fa-location-pin"></i> בחירת סניף
+                </label>&nbsp;&nbsp;</li>
+                
+
+
+            </ul> 
+            <br> 
+            <br> 
+            
+
+            
+           
+           
+          </form> 
+
+          
+          <button  value="Submit" id="purchase" ><i class="fa-sharp fa-solid fa-ticket"></i>להזמנת כרטיסים</button>
+
+    </section> 
+
+    <section class="two"  id="two" style="display: none; text-align: center;">
+        <br>
+
+        <h2 class="title2344">!שימו לב</h2> 
+        <p class="p23">יוצג לכם שתי אפשריות לבחור בסוג כרטיס</p> 
+        <p class="p23">.כל מושב אחד שווה למחיר כרטיס אחד</p>
+        <p class="p23">120:VIP מחיר כרטיס מסוג</p>
+        <p class="p23">55: מחיר כרטיס מסוג רגיל </p>
+        <p class="p23">8: כמות שורות באולם רגיל</p> 
+        <p class="p23">4 : VIP כמות שורות באולם</p> 
+        <p class="p23">:נא לבחור מסוג כרטיס כל כפתור מייצג סוג שונה של כרטיס</p> 
+
+        <br>
+        <button  class="button23" id="btn2">רגיל</button>
+        <br>
+        <br>
+        <br>
+        <button  class="button23" id="btn3">VIP</button>
+        <br>
+        <br>
+        <br>
+        <button  class="button23" id="btnN" style="display: none;">בחירת משוב למטה</button>
+
+
+    </section> 
+
+    <section class="three" id="three"  style="display: none;">
+        <div class="movie-container">
+            <label>: נא לבחור מושב באולם רגיל</label>
+            
+          </div>
+      
+          <ul class="showcase">
+            <li>
+              <div class="seat"></div>
+              <small>פנוי</small>
+            </li>
+            <li>
+              <div class="seat selected"></div>
+              <small>נבחר</small>
+            </li>
+            <li>
+              <div class="seat occupied"></div>
+              <small>תפוס</small>
+            </li>
+          </ul>
+      
+          <div class="container">
+            <div class="screen"></div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+            </div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+            </div>
+          </div>
+      
+          <p class="text">
+            כמות מושבים  :<span id="count">0</span> כיסאות 
+            <br>
+          
+            מחיר כרטיסים   :<span id="price">0</span> ש"ח
+          </p>
+
+        <button  class="button23" id="btn2"><a style="text-decoration: none;" href="../includes/food.html"><i class="fa-solid fa-arrow-left"></i>הבא</a></button>
+        <br>
+        <br>
+      </section>
+
+      <section class="four" id="four"  style="display: none;">
+        <div class="movie-container45">
+            <label class="labelvip">:VIP נא לבחור מושב באולם </label>
+            
+          </div>
+      
+          <ul class="showcase45">
+            <li>
+              <div class="seat45"></div>
+              <small>פנוי</small>
+            </li>
+            <li>
+              <div class="seat45 selected1"></div>
+              <small>נבחר</small>
+            </li>
+            <li>
+              <div class="seat45 occupied1"></div>
+              <small>תפוס</small>
+            </li>
+          </ul>
+      
+          <div class="container901">
+            <div class="screen12"></div>
+      
+            
+      
+            <div class="row90">
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+            </div>
+      
+            <div class="row90">
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45 occupied1"></div>
+            </div>
+      
+           
+      
+            <div class="row90">
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+            </div>
+      
+            <div class="row90">
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45 occupied1"></div>
+              <div class="seat45"></div>
+            </div>
+          </div>
+      
+          <p class="text1">
+            כמות מושבים  :<span id="count988">0</span> כיסאות 
+            <br>
+          
+            מחיר כרטיסים   :<span id="price988">0</span> ש"ח
+          </p>
+
+        
+        <br>
+        <button  class="button23" id="btn456"><a style="text-decoration: none;" href="../includes/food.html"><i class="fa-solid fa-arrow-left"></i>הבא</a></button>
+
+
+
+
+
+      </section>
+   </main> 
+   <br>
+   <br>
+   <footer id="footer">
+    <div class="container567"> 
+        <div class="row12">
+            <div class="footer-col">
+                <h4>אודות</h4>
+                <ul>
+                    <li><a href="">בדיקה/ביטול הזמנה</a></li>
+                    <li><a href="">צור קשר</a></li>
+                    <li><a href="">iSratim אודות</a></li> 
+                    <li><a href="">מידע כללי</a></li>
+                    <li><a href="">המתחמים שלנו</a></li>
+                </ul>
+
+            </div> 
+            <div class="footer-col">
+                <h4>קישורים</h4>
+                <ul>
+                    <li><a href="">כנסים ואירועים</a></li>
+                    <li><a href="">דרושים</a></li> 
+                    <li><a href="">יום הולדת מהסרטים</a></li> 
+                    <li><a href="">פרסום וקד"מ</a></li> 
+                    
+                    <li><a href=""></a></li>
+
+                    
+                </ul>
+
+            </div> 
+            <div class="footer-col">
+                <h4>תנאי שימוש</h4>
+                <ul>
+                    <li><a href="">תקנון</a></li> 
+                    <li><a href="">זכויות</a></li> 
+                    <li><a href="">נגישות</a></li>
+                </ul>
+
+            </div> 
+            <div class="footer-col">
+                <h4>הרשם לניוזלטר</h4>
+               <form action="" id="newsleter">
+                <input type="text" placeholder="שם מלא" class="inputName" required>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="דואר אלקטרוני" class="InputMail" required>
+                <input type="submit" value="שלח" class="InputSubmit">
+               </form>
+
+            </div>
+
+
+        </div>  
+        <hr>
+        <div class="row12">
+            <div class="col12"> 
+                <p>&#169; 2023 Created by Razi,Ali,Amir</p>
+
+            </div> 
+            <div class="socialIcons"> 
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>  
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</footer>
+
+
+
+
+   <script src="../javascript/premium.js" type="text/javascript"></script>
+   <script src="../javascript/vip.js" type="text/javascript"></script>
+   
+
+        
+       
+
+     
+    
+
+</body>
+</html>

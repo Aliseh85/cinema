@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color:f2f2f2;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}  
+body{
+    background-color:#222222;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#222222;
+}
+
+.logo {
+    
+    font-weight: bolder;
+    font-size: 35px; 
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px; 
+    list-style: none;
+}
+
+nav ul {
+    background-color: #222222;
+}
+
+nav ul li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    color:aqua;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#toggler {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid #fff;
+    display: none;
+}
+
+#toggler span { 
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#navbar-form {
+    position: relative;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+#search-form {
+    display: inline-flex;
+    width: 370px;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+    transform: scale(0,0);
+    transform-origin: center right;
+    transition: 0.4s transform linear;
+}
+
+#search-bar {
+    width: 290px;
+    height: 40px;
+    padding: 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+#search-btn {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #414141;
+}
+
+#search-form-opener {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#search-form-closer {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+}
+
+#box-2:checked ~ #search-form {
+    transform: scale(1,1);
+}
+
+#box-2:checked ~ #search-form-opener {
+    display: none;
+}
+
+#box-2:checked ~ #search-form-closer {
+    display: flex;
+}
+
+@media (max-width:800px) {
+    #toggler {
+        display: flex;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.8s ease-in-out;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    #box-1:checked ~ ul {
+        left: 0;
+    } 
+    #search-bar{
+        width: 100%;
+        margin-left: 30%;
+        
+    }
+    
+}
+
+  #one{
+    display: grid;
+  }
+
+
+  
+ 
+  .text-block {
+    position: absolute;
+    bottom: 120px;
+    right: 15px;
+    width: 35%;
+    
+    
+    background-color:lightseagreen;
+    color: white;
+   padding-left: 20px;
+    padding-right: 20px;
+    text-align: right; 
+    border-radius: 10%;
+    font-size: 20px;
+
+  } 
+  
+  .title1{
+    text-align: right;
+    font-size: 50px;
+    font-weight: bold; 
+    color: lightblue; 
+    margin-right:30px;
+
+  } 
+  .container1 img{
+    width: 100%; 
+    height:460px; 
+    border-radius: 10%; 
+    
+
+  }
+  .purchase{
+   
+    text-decoration: none;
+    border:1px solid darkgreen; 
+    font-weight: bold; 
+    color:black;
+    background-color:grey;
+    border-radius: 10%;
+  }
+  .clicktrailer{
+    text-decoration: none;
+    border:1px solid blue; 
+    font-weight: bold; 
+    color: white;
+    background-color:blue;
+    border-radius: 10%;
+    font-size: 15px;
+
+  } 
+  #trailer{
+    display: grid;
+  }
+  .video1{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+
+
+
+  }
+  .back{
+    background-color: green;
+    color: white;
+    font-size: 28px;
+    border-radius: 10%;
+    border: 5px solid green;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+  
+
+
+@media screen and (max-width:800px){ 
+    .title1{
+        font-size:60px; 
+        display: block;
+    } 
+    .container1 img{
+        width: 100%; 
+        height:400px;
+    } 
+    .text-block{ 
+        position: static;
+        width: 100%;
+        font-size: 25px; 
+        bottom:-90px;
+        
+        
+        padding-right:20px;
+        padding-bottom:0px;
+        margin-right:30px; 
+        margin-bottom:50px;
+        
+    }  
+    .clicktrailer{
+        font-size: 30px;
+    }
+    .video1{
+        width: 100%;
+        height: auto;
+    }
+   
+    
+
+}  
+.title2{
+    font-size: 50px;
+    font-weight: bold; 
+    color: lightblue; 
+    margin-right:30px;
+}
+
+.container234{
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: nowrap;
+}
+
+.card{
+    
+    background-color: aqua; 
+    width: 270px;
+    height:500px;
+    text-align: right;
+    margin: 10px; 
+    border-radius: 10px;
+} 
+.card-image{
+    
+    height: 150px;
+    margin-bottom:15px; 
+    background-size: cover; 
+    border-radius:15px 15px 0 0;
+
+
+} 
+.card1{ 
+    background-image:url('https://variety.com/wp-content/uploads/2022/06/Puss-in-Boots-The-Last-Wish.jpg?w=1000') 
+    
+
+} 
+.card2{
+    background-image:url('https://images.lifestyleasia.com/wp-content/uploads/sites/2/2022/11/03131027/avatar-the-way-of-water-1.jpeg?tr=w-1200,h-900');
+} 
+.card3{ 
+    background-image: url('https://i.ytimg.com/vi/KKHtMAUuobY/maxresdefault.jpg');
+    
+} 
+.card4{ 
+
+    background-image:url('https://assets-cdn.vam.ac.uk/2022/08/30/09/55/59/9bb31dd8-6ac9-4504-9389-c352fb9a9a7a/online-talk-the-lost-king_320.jpg');
+
+} 
+.card h2{
+    padding: 10px;
+} 
+
+.card p{
+    padding: 10px; 
+    
+} 
+.card a{
+    background-color: red;
+    color:white;
+    padding:10px 20px;
+    display: block;
+    text-align: center; 
+    margin:20px 50px;
+    text-decoration: none; 
+    border-radius: 10%;
+} 
+
+
+.card :hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+} 
+
+@media screen and (max-width:800px){
+    .container234{
+        flex-wrap: wrap;
+    }
+} 
+
+footer .container567{
+    background-color:rgb(56, 93, 116);
+    text-align: right;
+
+
+} 
+.row{
+    display:flex; 
+    justify-content: space-between; 
+    padding:40px 100px;
+} 
+.footer-col ul{
+    list-style: none;
+} 
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+} 
+
+.footer-col ul li{
+    padding: 10px 0;
+} 
+.footer-col ul li a{ 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+   
+
+} 
+
+.footer-col ul li a:hover{
+    color: #e91e64;
+
+} 
+
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+} 
+.footer-col .InputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+
+
+} 
+.col p{
+    color: white;
+
+} 
+
+
+.row .socialIcons i{
+    display: inline-block;
+    color:white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+
+}
+.row .socialIcons i:hover{
+    color: #e91e64;
+} 
+
+@media (max-width:800px){
+    footer .row{
+        flex-direction: column;
+        padding:20px 30px;
+
+    } 
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    } 
+    .footer-col input{
+        width: 100%;
+    }
+
+}

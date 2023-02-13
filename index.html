@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>iSratim</title> 
-    <link rel="stylesheet" href="css/homestyle.css"> 
+    <link rel="stylesheet" href="css/homestyleindex.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
-        function custom(){
-            alert("התוקף של הסרט נגמר , מצטערים");
-        }
-    </script>
+    <script src="jquery/home.js" text="text/javascript"></script>
     
 </head>
 <body> 
@@ -29,9 +25,9 @@
     
             
             <ul>
-                <li><a href="#">דף בית</a></li>
-                <li><a href="#">קטגוריות סרטים</a></li>
-                <li><a href="includes/page2.html">רישום למנוי</a></li>
+                <li><a href="#homelink">דף בית</a></li>
+                <li><a href="#newsleter">ניוזלטר</a></li>
+                <li><a href="includes/register.html">רישום למנוי</a></li>
                 <li><a href="#footer">אודות</a></li>
                 
             </ul>
@@ -55,39 +51,55 @@
                 </label>
             </div>
         </nav>  
-        <br class="enter">
-        <br class="enter"> 
-        <br class="enter">
-        <br class="enter">
-        <br class="enter">
-        <br class="enter"> 
-        <br class="enter">
-        <br class="enter"> 
-        <br class="enter">
-        <br class="enter">
-        <br class="enter">
-        <br class="enter">
+        
     </header> 
     
     
-    <main> 
+    <main>
+        <br>
+        <br>
+        <br> 
 
         
-        <section class="one"> 
-            <h2 class="title1">!חדש בקולנוע</h2> 
+        <section class="one" id="one"> 
+            <h2 class="title1" id="homelink">!חדש בקולנוע</h2> 
             <div class="container1">
-                <img src="images/homepage/cat.jpg" alt="סרט">
+                <img src="images/Cute-Gifs-puss-in-boots-33184400-500-280.gif" alt="סרט">
                 <div class="text-block">
                     <h4 class="para1">החתול של שרק 2</h4> 
                     
                     <p class="para2">ילדים,רפתקאות|2022 | ישראל |100 דקות</p>
                     
                     
-                    <a href="includes/page3.html" class="purchase"><i class="fas fa-ticket-alt"></i>לרכישת כרטיס</a>
+                    
+                    <a href="includes/cardticket.html" class="purchase"><i class="fas fa-ticket-alt"></i>לרכישת כרטיס</a>
+                    <br>
+                    
+                    <button class="clicktrailer" id="btn89"><i class="fas fa-play"></i>: צפייה בטריילר</button>
                 </div>
 
             </div>
         </section>  
+        <br>
+        <br>
+        <section id="trailer" style="display: none;">
+            <h2 class="title1">: טריילר</h2>
+            <br>
+            <video controls class="video1">
+                <source src="videos/Puss In Boots_ The Last Wish - Official Trailer 2.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+
+
+            </video>
+            <br>
+            <br>
+
+            <button type="button" id="buttonCin" class="back">חזרה לפרטי הסרט : <i class="fa-solid fa-arrow-right"></i></button>
+            
+
+        </section>
+        <br>
+        <br>
         <br>
         <br>
 
@@ -101,7 +113,7 @@
                    <p><b>אורך בדקות</b>: 100</p>
                    <p><b>תאריך בכורה</b>: 28/12/2022</p> 
                    <p><b>הגבלת צפיה</b>: מותר לכל</p>
-                    <a href="includes/page3.html">לרכישת כרטיס</a>
+                    <a href="includes/cardticket.html">לרכישת כרטיס</a>
                    
                     
                 </div>
@@ -115,7 +127,7 @@
                    
                    
                     
-                    <a href="" onclick="custom()">לרכישת כרטיס</a>
+                    <a id="btnstat">לרכישת כרטיס</a>
     
                 </div> 
                 <div class="card">
@@ -126,7 +138,7 @@
                     <p><b>תאריך בכורה</b>: 29/12/2022</p> 
                     <p><b>הגבלת צפיה</b>: מוגבל מגיל 16</p>
 
-                    <a href="" onclick="custom()">לרכישת כרטיס</a>
+                    <a id="btnstat1">לרכישת כרטיס</a>
                     
                 </div> 
                 <div class="card">
@@ -138,7 +150,7 @@
                     <p><b>הגבלת צפיה</b>: מותר לכל</p>
                     
                     
-                    <a href="" onclick="custom()">לרכישת כרטיס</a>
+                    <a id="btnstat2">לרכישת כרטיס</a>
                 </div>
                 
             </div>
@@ -188,7 +200,7 @@
                 </div> 
                 <div class="footer-col">
                     <h4>הרשם לניוזלטר</h4>
-                   <form action="">
+                   <form action="" id="newsleter">
                     <input type="text" placeholder="שם מלא" class="inputName" required>
                     <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="דואר אלקטרוני" class="InputMail" required>
                     <input type="submit" value="שלח" class="InputSubmit">

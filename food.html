@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מזנון אוכל</title>
+    <link rel="stylesheet" href="../css/foodstyle.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../jquery/newsleter.js"></script>
+    
+</head>
+<body> 
+    <header>
+        <nav>
+       
+            <li class="logo"><a class="fas fa-film"></a>iSratim</li>
+    
+            
+            <input type="checkbox" id="box-1">
+            <label id="toggler" for="box-1">
+                <span>תפריט<i class="fas fa-bars"></i></span>
+            </label>
+    
+            
+            <ul>
+                <li><a href="../index.html">דף בית</a></li>
+                <li><a href="#newsleter">ניוזלטר</a></li>
+                <li><a href="../includes/register.html">רישום למנוי</a></li>
+                <li><a href="#linkmenu">תפריט אוכל</a></li>
+                <li><a href="#footer">אודות</a></li>
+                
+                
+            </ul>
+    
+            
+            <div id="navbar-form">
+                <input type="checkbox" id="box-2">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="חיפוש סרטים" id="search-bar">
+                    <button id="search-btn" type="submit">
+                        <span><i class="fas fa-search"></i></span>
+                    </button>
+                </form>
+    
+                <label for="box-2" id="search-form-opener">
+                    <span><i class="fas fa-search"></i></span>
+                </label>
+    
+                <label for="box-2" id="search-form-closer">
+                    <span><i class="fas fa-times"></i></span>
+                </label>
+            </div>
+        </nav>  
+        
+    </header> 
+    
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="1one">
+            <h1  class="menu-title">:תפריטי המזנונים</h1> 
+            <p class="message">שימו לב , הזמנת נשנוש אוכל לא חובה בתשלום</p>
+            
+            <p class="message">: במידה ולא רוצים להזמין נשנוש אוכל אתם יכולים</p>
+            <br>
+            
+
+            <p class="message"><button class="btnhref"><a href="#pay"><i class="fa-regular fa-credit-card"></i>:להמשיך לתשלום</a></button></p>
+            <br>
+            <br>
+            <br>
+            <img src="../images/food.jpg" alt="food" width="100%" height="380px" class="foodimg">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1  class="menu-title" id="linkmenu">: תפריטי פופקורן</h1>
+            <br>
+            <br>
+            <form method="get" id="form2">
+                <ul class="foodlist">
+                    <li class="li1">
+                        <img src="../images/popcorn-alone.jpg" alt="one popcorn" class="f1" >
+                        <br>
+                        <br>
+                        <label for="number" class="f2"><input type="number" id="one-popcorn" name="quantity" class="f3" min="0">: כמות</label>
+                        <br>
+                        <br>
+                    </li> 
+                    <li class="li1">
+                        <img src="../images/couple.jpg" alt="couplepopcorn" class="f1">
+                        <br>
+                        <br>
+                        <label for="number" class="f2"><input type="number" id="couplepopcorn" name="quantity" class="f3" min="0">: כמות</label>
+                        <br>
+                        <br>
+                    </li> 
+
+                   <li class="li1">
+                        <img src="../images/big-popcorn.jpg" alt="big-popcorn" class="f1">
+                        <br>
+                        <br>
+                        <label for="number" class="f2"><input type="number" id="big-popcorn" name="quantity" class="f3" min="0" >: כמות</label>
+                        <br>
+                        <br>
+                    </li> 
+                    
+
+                    
+                </ul> 
+                <br>
+                <br>
+                <h1  class="menu-title">: תפריטי נאצוס</h1>
+                <br>
+                <br>
+
+
+                <ul class="foodlist">
+                    <li class="li1">
+                        <img src="../images/big-nachos.jpg" alt="big-nachos" class="f1">
+                        <br>
+                        <br>
+                        <label for="number" class="f2"><input type="number" id="big-nachos" name="quantity" class="f3" min="0">: כמות</label>
+                        <br>
+                        <br>
+                    </li> 
+
+                    <li class="li1">
+                        <img src="../images/nachos-couple.jpg" alt="couplenachos" class="f1">
+                        <br>
+                        <br>
+                        <label for="number" class="f2"><input type="number" id="couplenachos" name="quantity" class="f3" min="0">: כמות</label>
+                        <br>
+                        <br>
+                    </li> 
+
+                </ul>
+            </form>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <button class="btn134"  id="btn6" onclick="func1()"><i class="fa-solid fa-money-bill" id="pay"></i> : הצג מחיר תשלום מזנון אוכל</button>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+        </section>
+        <section class="sec2" id="sec2">
+            <p id="pp12" style="display: none;" class="ppp2">1</p>
+            <p id="pp22" style="display: none;" class="ppp2">2</p>
+            <p id="pp32" style="display: none;" class="ppp2">3</p>
+            <br>
+            <br>
+            
+            
+            
+
+        </section>
+
+        <section>
+            <button class="btn134"><i class="fa-regular fa-credit-card"></i><a href="../includes/creditpurchase.html">: הבא לתשלום</a></button>
+           
+            
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer id="footer">
+        <div class="container567"> 
+            <div class="row">
+                <div class="footer-col">
+                    <h4>אודות</h4>
+                    <ul>
+                        <li><a href="">בדיקה/ביטול הזמנה</a></li>
+                        <li><a href="">צור קשר</a></li>
+                        <li><a href="">iSratim אודות</a></li> 
+                        <li><a href="">מידע כללי</a></li>
+                        <li><a href="">המתחמים שלנו</a></li>
+                    </ul>
+
+                </div> 
+                <div class="footer-col">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="">כנסים ואירועים</a></li>
+                        <li><a href="">דרושים</a></li> 
+                        <li><a href="">יום הולדת מהסרטים</a></li> 
+                        <li><a href="">פרסום וקד"מ</a></li> 
+                        
+                        <li><a href=""></a></li>
+
+                        
+                    </ul>
+
+                </div> 
+                <div class="footer-col">
+                    <h4>תנאי שימוש</h4>
+                    <ul>
+                        <li><a href="">תקנון</a></li> 
+                        <li><a href="">זכויות</a></li> 
+                        <li><a href="">נגישות</a></li>
+                    </ul>
+
+                </div> 
+                <div class="footer-col">
+                    <h4>הרשם לניוזלטר</h4>
+                   <form action="" id="newsleter">
+                    <input type="text" placeholder="שם מלא" class="inputName" required>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="דואר אלקטרוני" class="InputMail" required>
+                    <input type="submit" value="שלח" class="InputSubmit">
+                   </form>
+
+                </div>
+
+
+            </div>  
+            <hr>
+            <div class="row">
+                <div class="col"> 
+                    <p>&#169; 2023 Created by Razi,Ali,Amir</p>
+
+                </div> 
+                <div class="socialIcons"> 
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>  
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="../javascript/Order.js" type="text/javascript"> </script>
+</body>
+</html>

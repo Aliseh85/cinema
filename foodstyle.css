@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color:f2f2f2;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}  
+body{
+    background-color:#222222;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#222222;
+}
+
+.logo {
+    
+    font-weight: bolder;
+    font-size: 35px; 
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px; 
+    list-style: none;
+}
+
+nav ul {
+    background-color: #222222;
+}
+
+nav ul li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    color:aqua;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#toggler {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid #fff;
+    display: none;
+}
+
+#toggler span { 
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#navbar-form {
+    position: relative;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+#search-form {
+    display: inline-flex;
+    width: 370px;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+    transform: scale(0,0);
+    transform-origin: center right;
+    transition: 0.4s transform linear;
+}
+
+#search-bar {
+    width: 290px;
+    height: 40px;
+    padding: 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+#search-btn {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #414141;
+}
+
+#search-form-opener {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#search-form-closer {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+}
+
+#box-2:checked ~ #search-form {
+    transform: scale(1,1);
+}
+
+#box-2:checked ~ #search-form-opener {
+    display: none;
+}
+
+#box-2:checked ~ #search-form-closer {
+    display: flex;
+} 
+.enter{
+    display: none;
+}
+
+@media (max-width:800px) {
+    #toggler {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.8s ease-in-out;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    #box-1:checked ~ ul {
+        left: 0;
+    }
+    #search-bar{
+        width: 100%;
+        margin-left: 30%;
+        
+    }
+   
+}
+.menu-title{
+    color:aqua;
+    text-align: right;
+} 
+.message{
+    text-align: right;
+    color: aqua;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.btnhref{
+    
+    background-color: darkorange;
+    border:2px solid darkgoldenrod;
+    border-radius: 10%;
+    font-size: 25px;
+    
+
+}
+.btnhref a{ 
+    text-decoration: none;
+
+}
+.foodlist{
+    display: flex; 
+    justify-content: space-evenly;
+    list-style: none;
+}
+.f1{
+    border-radius: 10%;
+} 
+.f2{
+    border: 10px solid red;
+    border-radius: 10%;
+    background-color: red; 
+    color: aqua;
+}
+.f3{
+    padding-left: -10px;
+    padding-right: -10px;
+}
+@media (max-width:800px){ 
+    .foodimg{
+        width:100%;
+        height:200px;
+    }  
+    .menu-title{
+        text-align: center; 
+        font-size: 30px; 
+        
+    } 
+    .foodlist{
+        display: block; 
+        
+    }
+    .li1{
+        margin-left: 10%; 
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .message{
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        width: 100%; 
+        
+    }
+    .btnhref{
+        font-weight: bold;
+        
+    }
+
+}
+.btn134{
+    text-align: center;
+    margin-left: 40%;
+    
+    justify-content: center;
+    background-color: aqua;
+    color: red;
+    border:4px solid aqua;
+    border-radius: 10%;
+    font-weight: bold;
+    
+}
+.ppp2{
+    text-align: center;
+    color:aqua;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.btn134 a{
+    text-decoration: none;
+    color: red;
+   
+}
+@media (max-width:800px){
+
+    .btn134{
+        font-size: 20px;
+        margin-left:13%;
+    }
+
+}
+footer .container567{
+    background-color:rgb(56, 93, 116);
+    text-align: right;
+
+
+} 
+.row{
+    display:flex; 
+    justify-content: space-between; 
+    padding:40px 100px;
+} 
+.footer-col ul{
+    list-style: none;
+} 
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+} 
+
+.footer-col ul li{
+    padding: 10px 0;
+} 
+.footer-col ul li a{ 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+   
+
+
+} 
+
+.footer-col ul li a:hover{
+    color:#e91e64;
+
+} 
+
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+} 
+.footer-col .InputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+
+
+} 
+.col p{
+    color: white;
+
+} 
+
+.row hr{
+    opacity: 0.7s;
+} 
+.row .socialIcons i{
+    display: inline-block;
+    color:white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+
+}
+.row .socialIcons i:hover{
+    color: #e91e64;
+} 
+
+@media (max-width:800px){
+    footer .row{
+        flex-direction: column;
+        padding:20px 30px;
+
+    } 
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    } 
+    .footer-col input{
+        width: 100%;
+    }
+
+}
